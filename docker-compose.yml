@@ -1,17 +1,17 @@
-
 version: "3.9"
 services:
   jammy:
-    container_name: jammy
+    container_name: how_linux_works-jammy
     build:
       context: ./
       dockerfile: Dockerfile
+    image: ubuntu_container:how_linux_works
     volumes:
       - type: bind
         source: ./
         target: /home/general_user
     restart: "no"
-    tty: true #この行がないとコンテナに入れない。
+    tty: true
     networks:
       ubuntu_network:
         ipv4_address: 172.20.0.2

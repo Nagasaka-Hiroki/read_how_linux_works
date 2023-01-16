@@ -13,3 +13,8 @@
 docker compose up --build -d
 ```
 
+## composeファイルの作成
+以下参考。
+- [Compose ファイル・リファレンス — Docker-docs-ja 1.12.RC2 ドキュメント](https://docs.docker.jp/v1.12/compose/compose-file.html)
+
+imageを使うとimageの名前がつけられるそうだ。
